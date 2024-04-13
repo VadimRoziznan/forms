@@ -7,10 +7,12 @@
     "jest": true
   },
   "parserOptions": {
-    "sourceType": "module"
+    "sourceType": "module",
+    "ecmaVersion": 2021
   },
   "rules": {
-    "no-unused-vars": "warn"
+    "no-unused-vars": "warn",
+    "arrow-parens": ["error", "always"]  // Добавляем правило для стрелочных функций
   },
   "overrides": [
     {

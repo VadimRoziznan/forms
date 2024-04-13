@@ -1,12 +1,11 @@
 import puppeteer from "puppeteer";
-
+const { describe, test, expect, beforeEach } = require("@jest/globals");
 
 jest.setTimeout(40000);
-describe('Clicking a button', () => {
+describe("Clicking a button", () => {
   let browser;
   let page;
-  
-// eslint-disable-next-line
+
   beforeEach(async () => {
     browser = await puppeteer.launch({
       headless: false,
@@ -17,23 +16,22 @@ describe('Clicking a button', () => {
     page = await browser.newPage();
   });
 
-  test('The button should have the aria-describedby attribute added', async () => {
-    
-    await page.goto('http://localhost:8080');
+  test("The button should have the aria-describedby attribute added", async () => {
+    await page.goto("http://localhost:8080");
 
-    await page.waitForSelector('.container');
+    await page.waitForSelector(".container");
 
-    const button = await page.$('.bd-example button.btn.btn-secondary');
+    const button = await page.$(".bd-example button.btn.btn-secondary");
     await button.click();
 
-    await page.waitForSelector('.popover');
+    await page.waitForSelector(".popover");
 
-    const ariaDescribedBy = await button.evaluate(btn => {
-        return btn.getAttribute('aria-describedby');
+    const ariaDescribedBy = await button.evaluate((btn) => {
+      return btn.getAttribute("aria-describedby");
     });
 
     expect(ariaDescribedBy).not.toBeNull();
-});
+  });
 
   afterEach(async () => {
     if (browser) {
