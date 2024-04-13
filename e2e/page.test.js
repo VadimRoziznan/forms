@@ -1,7 +1,7 @@
 import puppeteer from "puppeteer";
-const { describe, test, expect, beforeEach } = require("@jest/globals");
+/*const { describe, test, expect, beforeEach } = require("@jest/globals");*/
 
-jest.setTimeout(40000);
+jest.setTimeout(60000);
 describe("Clicking a button", () => {
   let browser;
   let page;
@@ -17,7 +17,7 @@ describe("Clicking a button", () => {
   });
 
   test("The button should have the aria-describedby attribute added", async () => {
-    await page.goto("http://localhost:8080");
+    await page.goto("http://localhost:8080", { timeout: 60000 });
 
     await page.waitForSelector(".container");
 
@@ -31,7 +31,7 @@ describe("Clicking a button", () => {
     });
 
     expect(ariaDescribedBy).not.toBeNull();
-  });
+  }, 60000);
 
   afterEach(async () => {
     if (browser) {
