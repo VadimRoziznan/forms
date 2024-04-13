@@ -1,5 +1,9 @@
 # Домашнее задание к занятию "Работа с HTML-формами"
 
+[![Build Status](https://github.com/VadimRoziznan/forms/workflows/CI/badge.svg)](https://github.com/VadimRoziznan/forms/actions)
+
+Доступно на Github Pages: [Работа с HTML-формами](https://VadimRoziznan.github.io/forms)
+
 Правила сдачи задания:
 1. **Важно**: в рамках этого ДЗ вы можете использовать любой пакетный менеджер
 2. Всё должно собираться через Webpack (включая картинки и стили) и выкладываться на Github Pages через Appveyor.
