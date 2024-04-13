@@ -4,19 +4,25 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="css/style.css">
-    <title>Jumper</title>
+    <title>HTML-forms</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
 </head>
 <body>
   <div class="container">
-    <p>Счет: <span class="score">0</span></p>
-    <p>Жизни: <span class="score">0</span></p>
-    <button class="new-game btn">Новая игра</button>
+    <h1 class="title">Домашнее задание к занятию "Работа с HTML-формами"</h1>
+    <div class="bd-example">
+      <button type="button" class="btn btn-secondary" data-toggle="popover" data-placement="top" title="Popover title" data-content="And here's some amazing content. It's very engaging. Right?">Click to toggle popover</button>
+    </div>
   </div>
-  <div class="container">
-    <div class="field"></div>
-  </div>
-  <script src="js/app.js" type="module"></script>
-  <script src="js/Field.js" type="module"></script>
+  
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  
+  <script>
+    $(document).ready(function(){
+        $('[data-toggle="popover"]').popover();
+    });
+  </script>
 </body>
 </html>
