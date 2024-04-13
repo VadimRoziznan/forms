@@ -9,9 +9,10 @@
     "lint": "eslint .",
     "lint:fix": "eslint . --fix",
     "test": "jest",
-    "coverage": "jest --coverage"
+    "coverage": "jest --coverage",
+    "e2e": "jest --testPathPattern=./e2e/ --runInBand"
   },
-  "author": "",
+  "author": "RoziznanVadim <roziznan_v@mail.ru>",
   "license": "ISC",
   "devDependencies": {
     "@babel/core": "^7.24.4",
@@ -34,5 +35,6 @@
     "webpack": "^5.91.0",
     "webpack-cli": "^5.1.4",
     "webpack-dev-server": "^5.0.4"
-  }
+  },
+  "repository": "git@github.com:VadimRoziznan/forms.git"
 }
