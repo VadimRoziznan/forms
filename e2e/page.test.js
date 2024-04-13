@@ -1,5 +1,6 @@
-import puppeteer from "puppeteer";
-/*const { describe, test, expect, beforeEach } = require("@jest/globals");*/
+/*import puppeteer from "puppeteer";
+const { describe, test, expect, beforeEach } = require("@jest/globals");*/
+const puppeteer = require("puppeteer");
 
 jest.setTimeout(60000);
 describe("Clicking a button", () => {
