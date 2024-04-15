@@ -1,6 +1,6 @@
 # Домашнее задание к занятию "Работа с HTML-формами"
 
-[![Build Status](https://github.com/VadimRoziznan/forms/workflows/CI/badge.svg)](https://github.com/VadimRoziznan/forms/actions)
+![CI](https://github.com/VadimRoziznan/forms/actions/workflows/web.yml/badge.svg)
 
 Доступно на Github Pages: [Работа с HTML-формами](https://VadimRoziznan.github.io/forms)
 
