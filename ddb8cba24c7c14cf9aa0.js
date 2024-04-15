@@ -1,0 +1,1 @@
+export default class Field{constructor(e,t,i){this.element=e,this.width=t,this.height=i}fieldGenerator(){for(let e=0;e<this.height;e++){const e=document.createElement("div");e.classList.add("grid"),this.element.appendChild(e);for(let t=0;t<this.width;t++){const t=document.createElement("div");t.classList.add("square"),e.appendChild(t)}}}}
