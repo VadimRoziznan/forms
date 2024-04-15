@@ -1,5 +1,7 @@
 # Домашнее задание к занятию "Работа с HTML-формами"
 
+![CI](https://github.com/VadimRoziznan/forms/actions/workflows/web.yml/badge.svg)
+
 Доступно на Github Pages: [Работа с HTML-формами](https://VadimRoziznan.github.io/forms)
 
 Правила сдачи задания:
